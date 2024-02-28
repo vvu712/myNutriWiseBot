@@ -1,0 +1,124 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    
+    
+  }
+#footer input{border: none;
+  border-bottom: 1px solid rgb(188, 201, 171);
+  height: 30px;
+  border-radius: 1px;}
+
+
+
+  
+  #message {
+    height: 150px;
+  }
+  .submitBtn:hover {
+    border-bottom: 1px solid rgb(15, 17, 12) !important;
+    color: white !important;
+    background-color: rgb(213, 219, 204) !important;
+
+    cursor: pointer;
+  }
+
+  
+  .sixFeatures button {
+    border: none;
+    border-top: 2px solid rgb(135, 145, 122);
+    border-bottom: 2px solid rgb(135, 145, 122);
+    
+  }
+  .imgButton{
+    width:90px;
+    
+    height:90px;
+    
+
+  }
+  .imgButton:hover{
+    cursor: pointer;
+    border-top:1px solid rgb(46, 69, 16);
+    padding-top:5px;
+  }
+  .sixFeatures button:hover{
+    background-color:rgb(151, 162, 136) !important;
+    cursor: pointer;
+    height:275px;
+
+      }
+
+  /*----------------style navBar---------------*/
+  li {
+    min-width: 100px;
+    padding: 8px;
+    margin-right: 22px;
+    margin-left: 22px;
+
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(12, 16, 14);
+  }
+  
+
+  a:hover {
+    color: rgb(188, 201, 171);
+    padding-top: 7px;
+
+    cursor: pointer;
+
+    border-top: 2px solid rgb(188, 201, 171);
+  }
+  ul {
+    overflow: hidden;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0px;
+    list-style-type: none;
+  }
+
+  /*responsive*/
+  .NavBarDiv {
+    padding-bottom: 16px;
+    
+  }
+
+
+
+
+  /*product features*/
+  .productFeaturesTitle1{
+    line-height: 20px; 
+    font-size:15px;
+    padding-bottom:10px;
+    z-index: 1000;
+    
+  }
+
+  .productFeaturesTitle{
+    line-height: 25px; 
+    font-size:20px;
+    padding-bottom:10px;
+    
+    
+  }
+  .productFeaturesText1{
+     width:190px;
+    
+
+  }
+
+  .productFeaturesText{
+     width:320px;
+  }
+
+.productFeaturesText,.productFeaturesText1{
+  line-height:25px;
+  display:none;
+}
+  

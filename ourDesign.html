@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Design</title>
+    <script
+      src="https://kit.fontawesome.com/ba3d3b6eb8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "Times New Roman", Times, serif;
+      }
+      #genQuestions input {
+        width: 80px;
+      }
+
+      th,
+      td {
+        padding: 10px 2px;
+      }
+
+      td {
+        color: rgb(90, 116, 58);
+      }
+      .submitBtn {
+        border: none;
+        background-color: rgb(188, 201, 171);
+        font-size: 16px;
+      }
+      #input {
+        width: 150px;
+      }
+
+      #footer input {
+        border: none;
+        border-bottom: 1px solid rgb(188, 201, 171);
+        height: 30px;
+        border-radius: 1px;
+        width: 150px;
+      }
+
+      #message {
+        height: 150px;
+      }
+      .submitBtn:hover {
+        border-bottom: 1px solid rgb(15, 17, 12) !important;
+        color: white !important;
+        background-color: rgb(213, 219, 204) !important;
+
+        cursor: pointer;
+      }
+
+      .submitBtn:hover {
+        border-top: 2px solid rgb(72, 106, 29) !important;
+        cursor: pointer;
+        padding-top: 15px;
+      }
+      .imgButton {
+        width: 90px;
+
+        height: 90px;
+      }
+      .imgButton:hover {
+        cursor: pointer;
+        border-top: 1px solid rgb(46, 69, 16);
+        padding-top: 5px;
+      }
+      .pinksection button {
+        background-color: rgb(188, 201, 171);
+        border: none;
+      }
+
+      /*----------------style navBar---------------*/
+      li {
+        min-width: 100px;
+        padding: 8px;
+        margin-right: 22px;
+        margin-left: 22px;
+
+        text-align: center;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(12, 16, 14);
+      }
+
+      a:hover {
+        color: rgb(188, 201, 171);
+        padding-top: 7px;
+
+        cursor: pointer;
+
+        border-top: 2px solid rgb(188, 201, 171);
+      }
+      ul {
+        overflow: hidden;
+        display: flex;
+
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0px;
+        list-style-type: none;
+      }
+
+      /*-----------------end of styling navBar----------*/
+      .ourValues button {
+        border: none;
+        font-size: 20px;
+        background-color: white;
+      }
+      .ourValues button:hover {
+        border-top: 2px solid rgb(162, 174, 146);
+        cursor: pointer;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      position: relative;
+      height: 3500px;
+      display: flex;
+      flex-direction: column;
+    "
+  >
+    <!--header/nav bar-->
+    <div
+      class="headerNav"
+      style="
+        border: 0.5px solid;
+        background-color: rgb(255, 255, 255);
+        height: 180px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+        display: flex;
+        max-width: 1352px;
+        margin: 0 auto;
+
+        flex-direction: column;
+      "
+    >
+      <!--header-->
+      <div
+        style="
+          flex: 1;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-evenly;
+        "
+      >
+        <div style="flex: 1"></div>
+        <!--title and logo-->
+        <div style="overflow: hidden; width: 50px">
+          <img
+            style="width: 100%"
+            src="practice pictures nutriwise/robot.png"
+            alt="NutriWise Bot logo"
+          />
+        </div>
+        <div style="padding-left: 10px">
+          <p style="font-size: 25px; display: inline-block">NutriWise Bot</p>
+        </div>
+
+        <!--log in-->
+        <div
+          style="
+            display: flex;
+            flex: 1;
+            justify-content: flex-end;
+            padding-right: 20px;
+            flex-direction: row;
+            align-items: center;
+          "
+        >
+          <a
+            href="https://shib.service.uci.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s2"
+            style="text-decoration: none"
+          >
+            <i class="fa-solid fa-user"></i>
+            <p style="display: inline-block">Log In/Sign Up</p>
+          </a>
+        </div>
+      </div>
+
+      <!--nav-->
+      <div style="padding-bottom: 16px">
+        <ul>
+          <li>
+            <a href="index.html" class="NavBar">HOME</a>
+          </li>
+          <li>
+            <a href="background.html" class="NavBar">BACKGROUND</a>
+          </li>
+          <li>
+            <a
+              href="#imgSection"
+              class="NavBar"
+              style="color: rgb(162, 174, 146)"
+              >OUR DESIGN</a
+            >
+          </li>
+
+          <li>
+            <a href="feedback.html" class="NavBar">FEEDBACK</a>
+          </li>
+          <li>
+            <a href="#contact" class="NavBar">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--product features img section position:-->
+    <div
+      id="imgSection"
+      style="
+        background-color: rgb(129, 157, 129);
+        padding: 15px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 180px;
+        left: 0;
+        right: 0;
+        min-width: 850px;
+
+        max-width: 850px;
+        z-index: 2;
+      "
+    >
+      <!--small image-->
+      <div
+        class="imgSection"
+        style="
+          z-index: 3;
+          display: flex;
+          flex-direction: column;
+
+          justify-content: space-evenly;
+          align-items: center;
+          border: 1px solid;
+        "
+      >
+        <button
+          onclick="changePic('product')"
+          style="background-color: rgb(92, 50, 57); border: none"
+        >
+          <img
+            id="img1btn"
+            class="imgButton"
+            src="practice pictures nutriwise/kylie's pic.PNG"
+            alt="NutriWise Bot App"
+          />
+        </button>
+        <button onclick="changePic('AI')">
+          <img
+            id="camTextfoodlog"
+            class="imgButton"
+            src="practice pictures nutriwise/AI technology.png"
+            alt="NutriWise Bot helping with logging food data through text and photo inputs"
+          />
+        </button>
+        <button onclick="changePic('scanBarcode')">
+          <img
+            id="img3btn"
+            class="imgButton"
+            src="practice pictures nutriwise/nutritionalInfo.png"
+            alt="barcode scanning function allowing for user to receive nutritional information"
+          />
+        </button>
+        <button onclick="changePic('quest')">
+          <img
+            id="img4btn"
+            class="imgButton"
+            src="practice pictures nutriwise/journal.jpg"
+            alt="customizable characters and quest for users"
+          />
+        </button>
+
+        <button onclick="changePic('imageRecognition')">
+          <img
+            id="img6btn"
+            class="imgButton"
+            src="practice pictures nutriwise/characters.png"
+            alt="idk"
+          />
+        </button>
+      </div>
+
+      <!--big image  cover photo, food logging, scanning, camera recognition, quest, -->
+      <div style="flex: 1; padding: 13px; margin: 0 auto">
+        <img
+          style="
+            z-index: 2;
+
+            margin: 0 auto;
+
+            width: 100%;
+            height: 600px;
+            display: block;
+          "
+          class="imageDisplay"
+          id="product"
+          src="practice pictures nutriwise/kylie's pic.PNG"
+          alt="product"
+        />
+        <img
+          style="
+            z-index: 2;
+
+            margin: 0 auto;
+
+            width: 100%;
+            height: 600px;
+            display: none;
+          "
+          id="AI"
+          class="imageDisplay"
+          src="practice pictures nutriwise/ai technology.png"
+          alt=""
+        />
+
+        <img
+          style="
+            z-index: 2;
+
+            margin: 0 auto;
+
+            width: 100%;
+            height: 600px;
+            display: none;
+          "
+          id="scanBarcode"
+          class="imageDisplay"
+          src="practice pictures nutriwise/nutritionalInfo.png"
+          alt=""
+        />
+        <img
+          style="
+            z-index: 2;
+
+            margin: 0 auto;
+
+            width: 100%;
+            height: 600px;
+            display: none;
+          "
+          id="quest"
+          class="imageDisplay"
+          src="practice pictures nutriwise/journal.jpg"
+          alt=""
+        />
+
+        <img
+          style="
+            z-index: 2;
+
+            margin: 0 auto;
+
+            width: 100%;
+            height: 600px;
+            display: none;
+          "
+          id="imageRecognition"
+          class="imageDisplay"
+          src="practice pictures nutriwise/characters.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!--first green-->
+    <div
+      class="greenSec"
+      style="
+        min-width: 1000px;
+
+        border: 1px solid;
+        background-color: rgb(188, 201, 171);
+        height: 550px;
+        position: absolute;
+        top: 500px;
+        right: 0;
+        left: 0;
+      "
+    ></div>
+
+    <!--body text 1 - intro to research-->
+    <div
+      style="
+        margin: 0 auto;
+        z-index: 10;
+        position: relative;
+        top: 300px;
+
+        background-color: rgb(255, 255, 255);
+        width: 850px;
+        display: flex;
+        border: 1px solid;
+
+        height: 600px;
+      "
+    >
+      <!--text-->
+      <div style="padding-top: 75px; padding-left: 50px; padding-right: 50px">
+        <p
+          class="aboutUs"
+          style="color: rgb(162, 174, 146); font-size: 24px; width: 300px"
+        >
+          THE TECHNOLOGY BEHIND NUTRIWISE BOT
+        </p>
+        <p class="slogan" style="font-size: 34px; margin: 15px">
+          Our Technology: Transparency and Trust in NutriWise Bot
+        </p>
+        <hr />
+
+        <br />
+        <p
+          style="font-size: 19px; font-style: italic; color: rgb(162, 174, 146)"
+        >
+          How does NutriWise Bot work?
+        </p>
+        <br />
+        <p style="padding-bottom: 30px; line-height: 25px">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsam
+          illo qui, consequatur aliquid nihil omnis quaerat in consectetur nisi
+          quia culpa voluptatibus eum magni esse sint? Sapiente, asperiores
+          provident.
+        </p>
+      </div>
+      <img
+        style="width: 50%"
+        src="practice pictures nutriwise/AI technology.png"
+        alt=""
+      />
+    </div>
+
+    <!--second green section-->
+    <div
+      class="greenSec"
+      style="
+        min-width: 1000px;
+        border: 1px solid;
+        background-color: rgb(188, 201, 171);
+        height: 550px;
+        position: absolute;
+        top: 1360px;
+        right: 0;
+        left: 0;
+      "
+    ></div>
+
+    <!--our values-->
+    <div
+      class="ourValues"
+      style="
+        display: flex;
+        margin: 0 auto;
+        width: 1000px;
+        position: relative;
+        top: 400px;
+
+        flex-direction: column;
+      "
+    >
+      <div class="" style="display: flex; flex-direction: column">
+        <!--title - Our Core Values-->
+        <div style="text-align: center">
+          <p style="font-style: italic; font-size: 30px">Our Core Values</p>
+          <p>
+            Our mission is to improve user's nutrition by using an AI chatbot to
+            make assistance more accessible.
+          </p>
+        </div>
+        <!--values pics and description-->
+        <div
+          style="
+            display: flex;
+
+            width: 1000px;
+            height: 100%;
+            padding-bottom: 40px;
+          "
+        >
+          <!-- Column 1 -->
+          <div style="flex: 1; padding: 35px; padding-bottom: 15px">
+            <img
+              style="width: 250px; height: 250px; border-radius: 125px"
+              src="practice pictures nutriwise/consumer engagement.png"
+              alt=""
+            />
+            <div style="width: 100%; text-align: center">
+              <p
+                class="aboutUs"
+                style="font-style: italic; font-size: 24px; padding-bottom: 5px"
+              >
+                CUSTOMER ENGAGEMENT
+              </p>
+              <p
+                id="aboutMotivation"
+                style="margin: 5px; line-height: 25px; display: none"
+              >
+                NutriWise Bot actively involves users in meaningful
+                interactions, providing valuable content and fostering a sense
+                of community, enhancing both intrinsic and extrinsic motivations
+                for lasting nutritional knowledge.
+              </p>
+
+              <button
+                onclick="values('aboutMotivation')"
+                class="motivationButton"
+              >
+                Read More Here &gt;
+              </button>
+            </div>
+          </div>
+
+          <!-- Column 2 -- culture -->
+          <div
+            style="
+              flex: 1;
+              padding: 35px;
+              padding-bottom: 15px;
+
+              box-sizing: border-box;
+            "
+          >
+            <img
+              style="width: 250px; height: 250px; border-radius: 125px"
+              src="practice pictures nutriwise/culture.jpg"
+              alt=""
+            />
+            <div style="width: 100%; text-align: center">
+              <p
+                class="aboutUs"
+                style="font-size: 24px; font-style: italic; padding-bottom: 5px"
+              >
+                CULTURE
+              </p>
+              <p id="aboutCulture" style="display: none; line-height: 25px">
+                Our diverse healthy cuisines from different cultures makes
+                eating health exciting. This makes cuisines more personalized
+                increase user adherence.
+              </p>
+
+              <button onclick="values('aboutCulture')" class="cultureButton">
+                Read More Here &gt;
+              </button>
+            </div>
+          </div>
+
+          <!-- Column 3 -- holsitic care-->
+          <div
+            style="
+              flex: 1;
+              padding: 35px;
+              padding-bottom: 15px;
+
+              box-sizing: border-box;
+            "
+          >
+            <img
+              style="width: 250px; height: 250px; border-radius: 125px"
+              src="practice pictures nutriwise/holistic-care.jpg"
+              alt=""
+            />
+            <div style="width: 100%; text-align: center">
+              <p
+                class="aboutUs"
+                style="font-size: 24px; font-style: italic; padding-bottom: 5px"
+              >
+                HOLISTIC CARE
+              </p>
+              <p id="aboutHolistic" style="display: none; line-height: 25px">
+                Beyond only looking at numerical food data, our company aims at
+                healing the user holisitically by improving user's mindset and
+                improving user's intrinsic and extrinsic motivation.
+              </p>
+
+              <button onclick="values('aboutHolistic')" class="holisticButton">
+                Read More Here &gt;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--body text 2 our values and why it makes us unqiue-->
+    <div
+      style="
+        margin: 0 auto;
+        z-index: 10;
+        position: relative;
+        top: 400px;
+
+        background-color: rgb(255, 255, 255);
+        width: 850px;
+        display: flex;
+        border: 1px solid;
+
+        height: 700px;
+      "
+    >
+      <!--text-->
+      <div style="padding-top: 75px; padding-left: 50px; padding-right: 50px">
+        <p
+          class="aboutUs"
+          style="color: rgb(162, 174, 146); font-size: 24px; width: 300px"
+        >
+          THE REASON BEHIND OUR PRODUCT
+        </p>
+        <p class="slogan" style="font-size: 34px; margin: 15px">
+          Cultivating Wellness: NutriWise Bot's Commitment to Our Core Values
+        </p>
+        <hr />
+
+        <br />
+        <p
+          style="font-size: 19px; font-style: italic; color: rgb(162, 174, 146)"
+        >
+          Discover Holistic Nutrition, Motivation, and Cultural Inclusivity for
+          a Healthier Lifestyle
+        </p>
+        <br />
+        <p style="padding-bottom: 30px; line-height: 25px">
+          At NutriWise Bot, our culture prioritizes holistic care, guiding users
+          toward healthier choices for both body and mind. We're dedicated to
+          fostering motivation through continuous engagement, supporting users
+          on their journey to improved well-being. With diverse options and
+          cultural insights from our AI bot, we cater to a broader audience,
+          enhancing overall user engagement.
+        </p>
+      </div>
+      <img
+        style="
+          background-color: rgb(250, 248, 221);
+          width: 50%;
+          border-left: 2px solid rgb(162, 175, 153);
+        "
+        src="practice pictures nutriwise/healthy mind healthy life.png"
+        alt="healthy mind equals healthy life"
+      />
+    </div>
+
+    <!-- third green section-->
+    <div
+      class="greenSec"
+      style="
+        min-width: 1000px;
+
+        border: 1px solid;
+        background-color: rgb(188, 201, 171);
+        height: 550px;
+        position: absolute;
+        top: 2400px;
+        right: 0;
+        left: 0;
+      "
+    ></div>
+
+    <!--footer-->
+    <div id="footer"></div>
+
+    <script>
+      function values(value) {
+        var valueText = document.getElementById(value);
+        if (valueText.style.display === "none") {
+          valueText.style.display = "block";
+        } else {
+          valueText.style.display = "none";
+        }
+      }
+
+      function changePic(imgName) {
+        const image = document.querySelectorAll(".imageDisplay");
+        image.forEach((img) => {
+          img.style.display = "none";
+        });
+        const selectedImage = document.getElementById(imgName);
+        if (selectedImage) {
+          selectedImage.style.display = "block";
+        }
+      }
+
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          // Insert the loaded content into the container section
+          document.getElementById("footer").innerHTML = data;
+        })
+
+        .catch((error) => console.error("Error loading content:", error));
+    </script>
+  </body>
+</html>

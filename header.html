@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>header</title>
+    <style>
+      li {
+        min-width: 100px;
+        padding: 8px;
+        margin-right: 22px;
+        margin-left: 22px;
+
+        text-align: center;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(12, 16, 14);
+      }
+
+      a:hover {
+        color: rgb(188, 201, 171);
+        padding-top: 7px;
+
+        cursor: pointer;
+
+        border-top: 2px solid rgb(188, 201, 171);
+      }
+      ul {
+        overflow: hidden;
+        display: flex;
+
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0px;
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="headerNav"
+      style="
+        border: 0.5px solid;
+        background-color: rgb(255, 255, 255);
+        height: 180px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+        display: flex;
+        max-width: 1352px;
+        margin: 0 auto;
+
+        flex-direction: column;
+      "
+    >
+      <!--header-->
+      <div
+        style="
+          flex: 1;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-evenly;
+        "
+      >
+        <div style="flex: 1"></div>
+        <!--title and logo-->
+        <div style="overflow: hidden; width: 50px">
+          <img
+            style="width: 100%"
+            src="practice pictures nutriwise/robot.png"
+            alt=""
+          />
+        </div>
+        <div style="padding-left: 10px">
+          <p style="font-size: 25px; display: inline-block">NutriWise Bot</p>
+        </div>
+
+        <!--log in-->
+        <div
+          style="
+            display: flex;
+            flex: 1;
+            justify-content: flex-end;
+            padding-right: 20px;
+            flex-direction: row;
+            align-items: center;
+          "
+        >
+          <a
+            href="https://shib.service.uci.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s2"
+            style="text-decoration: none"
+          >
+            <i class="fa-solid fa-user"></i>
+            <p style="display: inline-block">Log In/Sign Up</p>
+          </a>
+        </div>
+      </div>
+
+      <!--nav-->
+      <div style="padding-bottom: 16px">
+        <ul>
+          <li>
+            <a href="index.html" class="NavBar">HOME</a>
+          </li>
+          <li>
+            <a href="background.html" class="NavBar">BACKGROUND</a>
+          </li>
+          <li>
+            <a
+              href="#imgSection"
+              class="NavBar"
+              style="color: rgb(162, 174, 146)"
+              >OUR DESIGN</a
+            >
+          </li>
+
+          <li>
+            <a href="feedback.html" class="NavBar">FEEDBACK</a>
+          </li>
+          <li>
+            <a href="#contact" class="NavBar">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

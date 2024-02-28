@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Times New Roman", Times, serif;
+        }
+        #footer input {
+            border: none;
+            border-bottom: 1px solid rgb(188, 201, 171);
+            height: 30px;
+            border-radius: 1px;
+            width: 150px;
+        }
+        #message {
+            min-height: 150px;
+        }
+        .submitBtn:hover {
+        border-bottom: 1px solid rgb(15, 17, 12) !important;
+        color: white !important;
+        background-color: rgb(213, 219, 204) !important;
+
+        cursor: pointer;
+      }
+
+      .submitBtn:hover {
+        border-top: 2px solid rgb(72, 106, 29) !important;
+        cursor: pointer;
+        padding-top: 15px;
+      }
+
+
+        
+        
+
+
+    </style>
+</head>
+<body>
+    <div
+      id="footer"
+      
+      style="
+      min-width:1000px;
+      border: 1px solid;
+      padding:30px 20px;
+      background-color:rgb(188, 201, 171);
+        
+      position: absolute;
+      left: 0px;
+      right: 0px;
+        bottom: 0px;
+        z-index: 500;
+
+        text-align: center;
+        display:flex;
+        flex-direction:column
+    
+      "
+    >
+    <p id='contact' style="font-size:35px;font-style:italic;padding-bottom:25px;">CONTACT US</p>
+    
+    
+    <div style="display: flex;">
+        <!--social media-->
+        <div style="flex:1">
+          <p style="font-style: italic;">FOLLOW US!</p>
+          <br>
+           
+           <i class="fa-brands fa-instagram fa-2xl"></i>
+           <i class="fa-brands fa-x-twitter fa-2xl"></i>
+           <i class="fa-brands fa-facebook fa-2xl"></i>
+           
+        </div>
+        <!--contact form-->
+      
+        <div style="flex:1 ">
+            <div style="width:600px;">
+                <form action="/IN4MATIX-notes/notes-for-html/notes-for-html-styling.html" method="POST" enctype="multipart/form-data">
+                    <!--first/last name-->
+                    <div style="padding-right:50px;padding-left:50px;display: flex;flex-direction: row;justify-content: center;text-align: start;">
+                        <div style="padding-right:10px; width:50%;">
+                            <p >First name*</p>
+                       
+                            <input style="width: 100%;"
+                            type="text"  class="input"id="firstname" minlength="1" > 
+                            <br>
+            
+                        </div>
+            
+                        <div style=" width:50%;">
+                            <p>Last name*</p>
+                            <input style="width: 100%;"type="text"class="input" id="lastname"  minlength='1' > 
+                            <br>
+            
+                        </div>
+                        
+                    </div>
+            
+                    <!--email/subject-->
+                    <div style="padding-right:50px;padding-left:50px;display: flex;flex-direction: row;justify-content: center;text-align: start;">
+                        <div style="padding-right:10px;width:50%">
+                            <p >Email*</p>
+                       
+                            <input style="width: 100%;"type="text" class="input" id="email" minlength="1" > 
+                            <br>
+            
+                        </div>
+            
+                        <div style=" width:50%;">
+                            <p>Subject*</p>
+                            <input style="width: 100%;"type="text" class="input" id="subject"  minlength='1' > 
+                            <br>
+            
+                        </div>
+                        
+                    </div>
+                    <!--message-->
+                    <div style="padding-right:40px;padding-left:50px;display: flex;flex-direction: row;justify-content: center;text-align: start;">
+                        <div style="padding-right:10px;width:100%">
+                            <p >Message*</p>
+                       
+                            <input style="width: 100%;"type="text" class="input" id="message" minlength="1" > 
+                            <br>
+            
+                        </div>
+            
+                    </div>
+                    <br>
+            
+                    <button class="submitBtn" style="padding: 10px 55px;border:none;background-color:rgb(255, 255, 255);color:rgb(188, 201, 171)">Submit</button>
+                    <br>
+                
+
+            </div>
+            
+               
+
+            
+            
+        </div>
+    
+    </div>
+    
+    
+       
+    
+
+
+    </div>
+    
+</body>
+</html>

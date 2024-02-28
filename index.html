@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NutriWise Bot</title>
+    <!--awesome font-->
+    <script
+      src="https://kit.fontawesome.com/ba3d3b6eb8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style/styleSheet.css" />
+    
+  </head>
+  <body
+    style="
+      height:3800px;
+      position: relative;
+      
+      justify-content: center;
+      align-items: center;
+    "
+  >
+    <!--green section position: relative-->
+    <div style="height:3700px;width: 100%; ">
+      <!--header section position: fixed-->
+      <div
+        class="headerNav"
+        style="
+          border: 0.5px solid;
+
+          height: 180px;
+          position: fixed;
+          top: 0;
+          right: 0;
+          left: 0;
+          z-index: 1000;
+          display: flex;
+          margin: 0 auto;
+
+          flex-direction: column;
+          max-width: 1352px;
+          background-color: rgb(255, 255, 255);
+        "
+      >
+        <!--header NutriWise Bot title for phone justify-content is center normal it is space-evenly-->
+        <div
+          style="
+            padding-top: 10px;
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+          "
+        >
+          <!--empty section used to center header set display to none for phone remove for others-->
+          <div style="flex: 1; background-color: green"></div>
+          <!--title and logo-->
+          <div style="overflow: hidden; width: 50px">
+            <img
+              style="width: 100%"
+              src="practice pictures nutriwise/robot.png"
+              alt=""
+            />
+          </div>
+          <div style="padding-left: 10px">
+            <p style="font-size: 25px; display: inline-block">NutriWise Bot</p>
+          </div>
+
+          <!--log in-->
+          <div
+            style="
+              display: flex;
+              flex: 1;
+              justify-content: flex-end;
+              padding-right: 20px;
+              flex-direction: row;
+              align-items: center;
+            "
+          >
+            <a
+              href="https://shib.service.uci.edu/idp/profile/SAML2/Redirect/SSO?execution=e3s1"
+              style="text-decoration: none"
+            >
+              <i class="fa-solid fa-user"></i>
+              <p style="display: inline-block">Log In/Sign Up</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- change display to none for phone and remove for others-->
+        <div class="NavBarDiv">
+          <ul>
+            <li>
+              <a href="#imgSection" class="NavBar" style="color:rgb(162, 174, 146)">HOME</a>
+            </li>
+            <li>
+              <a href="background.html" class="NavBar"
+                >BACKGROUND</a
+              >
+            </li>
+            <li>
+              <a href="ourDesign.html" class="NavBar"
+                >OUR DESIGN</a
+              >
+            </li>
+
+            <li>
+              
+                <a href="feedback.html" class="NavBar">FEEDBACK</a>
+              
+            </li>
+            <li>
+              <a href="#contact" class="NavBar">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <!--products position:absolute; top:180px-->
+    <div 
+    class='prototype'
+    id="prototype1"
+    >
+      
+    </div>
+      
+    </div>
+
+      
+      <!--first green position: absolute-->
+      <div
+        class="greenSec"
+        style="
+          border: 1px solid;
+          background-color: rgb(188, 201, 171);
+          height: 650px;
+          position: absolute;
+          top: 500px;
+          right: 0;
+          left: 0;
+        "
+      ></div>
+
+      <!--body text - intro to nutrwise-->
+      <div
+        style="
+          border: 1px solid;
+          margin: 0 auto;
+
+          z-index: 50;
+          position: absolute;
+          top: 900px;
+
+          left: 0px;
+          right: 0px;
+          background-color: rgb(255, 255, 255);
+          width: 850px;
+          height: 540px;
+          display: flex;
+
+        "
+      >
+        <img
+          style="flex:1; width:100%"
+          src="practice pictures nutriwise/kylie's pic.PNG"
+          alt=""
+        />
+
+        <!--text-->
+        <div style="flex:1;padding-top: 75px; padding-left: 50px; padding-right: 50px">
+          <p class="aboutUs" style="font-size: 24px;color: rgb(162, 174, 146)">ABOUT NUTRIWISE BOT</p>
+          <p class="slogan" style="font-size: 34px; margin: 15px">
+            Taste the Future: AI Nutrition Bot, Redefining Healthy Living.
+          </p>
+          <hr />
+
+          <br />
+          <p style="font-size:19px; font-style: italic; color: rgb(162, 174, 146);">Welcome to a new era of personalized nutrition!</p>
+          <br>
+          <p style="line-height: 25px;">
+            Discover the power of NutriWise, the ultimate AI chatbot for all your nutrition needs! 
+            Log your food effortlessly through text or images, ask NutriWise any nutritional related inquiries,
+            and let NutriWise guide you on your journey to a healthier lifestyle.
+          </p>
+          
+          
+        </div>
+      </div>
+      <!--all 6 features-->
+
+      <div
+        class="sixFeatures"
+        style="
+          text-align: center;
+          justify-content: center;
+          width: 1050px;
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 1560px;
+          z-index: 150;
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+        "
+      >
+        <div style="flex: 1; padding-bottom: 50px">
+          <p style="font-size: 35px; font-style: italic">
+            ASK NUTRIWISE ANYTHING
+          </p>
+          <p>(nutrition-related)</p>
+        </div>
+
+        <!-- row 1bfeatures-->
+
+        <div
+          style="
+            flex: 1;
+            flex-direction: row;
+            display: flex;
+            padding-bottom: 60px;
+            min-height: 315px;
+          "
+        >
+          <!--act therapy-->
+          <div
+            
+            style="
+              padding-left: 40px;
+              padding-right: 50px;
+              flex: 1;
+              position: relative;
+              
+            "
+
+          >
+            <button
+              style="
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(255, 255, 255);
+                align-items: center;
+              "
+              id="therapyButton"
+              onclick="flip('therapyPic','therapyText')"
+            >
+              <img
+                id="therapyPic"
+                style="
+                  width: 100%;
+                  position: relative;
+                  bottom: 0px;
+                  left: 0;
+                  right: 0;
+                "
+                src="practice pictures nutriwise/therapy.png"
+                alt=""
+              />
+              <br />
+              <p  class='productFeaturesTitle1' >GET ACT THERAPY</p>
+
+              <p class='productFeaturesText1'id="therapyText">Engage in Acceptance and Commitment Therapy (ACT) techniques through our Conversational AI bot, fostering mindfulness around eating habits and encouraging commitment to personal goals. This paves the way for a comprehensive nutrition solution with lasting effects.
+              </p>
+            </button>
+          </div>
+
+          <!--new recipe-->
+          <div style="flex: 1; position: relative; padding-right: 50px">
+            <button
+              style="
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(255, 255, 255);
+                align-items: center;
+              "
+              id="recipeButton"
+              onclick="flip('recipePic','recipeText')"
+            >
+              <img
+                id="recipePic"
+                style="
+                  width: 100%;
+                  position: relative;
+                  bottom: 0px;
+                  left: 0;
+                  right: 0;
+                "
+                src="practice pictures nutriwise/recipe.png"
+                alt=""
+              />
+              <br />
+              <p class='productFeaturesTitle1' style="z-index: 1000">ASK FOR NEW RECIPE IDEAS</p>
+
+              <p class='productFeaturesText1'id="recipeText">Explore a diverse culinary world with 1000+ new recipes from various cultures. Access them all, and let the bot be your culinary guide, offering recommendations and answering your questions about recipes and foods.
+              </p>
+            </button>
+          </div>
+          <!--nutritionalInfo-->
+          <div style="flex: 1; position: relative; padding-right: 50px">
+            <button
+              style="
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(255, 255, 255);
+                align-items: center;
+              "
+              id="nutritionButton"
+              onclick="flip('nutritionPic','nutritionText')"
+            >
+              <img
+                id="nutritionPic"
+                style="width: 100%; position: relative"
+                src="practice pictures nutriwise/nutritionalInfo.png"
+                alt=""
+              />
+              
+              <p class='productFeaturesTitle1' style="z-index: 1000">SCAN FOR NUTRITIONAL INFORMATION</p>
+
+              <p class='productFeaturesText1' id="nutritionText" style="display:none">Utilize the convenience of barcode scanning to instantly access nutritional information, including sugar, fiber, salt macros, and calorie content. Stay informed about what you consume with a quick scan.</p>
+            </button>
+          </div>
+          <!--food journaling-->
+          <div style="flex: 1; position: relative; padding-right: 40px">
+            <button
+              style="
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(255, 255, 255);
+                align-items: center;
+              "
+              id="journalButton"
+              onclick="flip('journalPic','journalText')"
+            >
+              <img
+                id="journalPic"
+                style="
+                  width: 70%;
+                  position: relative;
+                  bottom: 0px;
+                  left: 0;
+                  right: 0;
+                "
+                src="practice pictures nutriwise/journal.jpg"
+                alt=""
+              />
+              <br />
+              <p class='productFeaturesTitle1' style="z-index: 1000">ASSIST WITH FOOD JOURNALING</p>
+
+              <p class='productFeaturesText1' id="journalText">Share your dietary habits through image and text inputs, allowing the AI bot to analyze and provide personalized advice based on your unique information. Tailor-made recommendations for your individual needs.
+              
+              </p>
+            </button>
+          </div>
+        </div>
+        <!--row 2 other designs-->
+        <div style="padding-bottom: 0px">
+          <div style="padding-bottom: 50px">
+            <p style="font-size: 35px; font-style: italic">OTHER FEATURES</p>
+          </div>
+          <div style="flex-direction: row; display: flex; min-height: 343px">
+            <!--gamefication characters-->
+            <div style="flex: 1; position: relative">
+              <button
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  width: 70%;
+                  height: 100%;
+                  margin: 0 auto;
+                  background-color: rgb(255, 255, 255);
+                  align-items: center;
+                  justify-content: center;
+                "
+                id="characterButton"
+                onclick="flip('characterPic','characterText')"
+              >
+                <img
+                  id="characterPic"
+                  style="
+                    width: 100%;
+                    position: relative;
+                    bottom: 0px;
+                    left: 0;
+                    right: 0;
+                  "
+                  src="practice pictures nutriwise/characters.png"
+                  alt=""
+                />
+                
+
+                <p class='productFeaturesTitle' >CUSTOMIZABLE CHARACTERS</p>
+                
+                <p class='productFeaturesText' id="characterText">Experience motivation like never before with cute characters, rewarding journeys, and items that will keep you engaged with the app. Turn your nutrition journey into a fun and rewarding adventure.
+                </p>
+              </button>
+            </div>
+
+            <!--buddy-->
+            <div style="flex: 1; position: relative">
+              <button
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  width: 70%;
+                  height: 100%;
+                  margin: 0 auto;
+                  background-color: rgb(255, 255, 255);
+                  align-items: center;
+                  justify-content: center;
+                "
+                id="buddyButton"
+                onclick="flip('buddyPic','buddyText')"
+              >
+                <img
+                  id="buddyPic"
+                  style="
+                    height: 70%;
+                    width: 70%;
+                    position: relative;
+                    bottom: 0px;
+                    left: 0;
+                    right: 0;
+                  "
+                  src="practice pictures nutriwise/buddy.png"
+                  alt=""
+                />
+                <br />
+                <p class='productFeaturesTitle' style="z-index: 1000">YOUR 24/7 NUTRITIONAL BUDDY</p>
+
+                <p class='productFeaturesText' id="buddyText">Access nutrition advice round the clock with our 24/7 available bot. Stay motivated and receive timely reminders to keep you on track toward achieving your goals. Your personalized nutrition companion is always at your service.</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--second green-->
+      <div
+        class="greenSec"
+        style="
+          width: 100%;
+          border: 1px solid;
+          background-color: rgb(188, 201, 171);
+          height: 650px;
+          position: absolute;
+          top: 1340px;
+          right: 0;
+          left: 0;
+        "
+      ></div>
+
+      <!--third green-->
+      <div
+        class="greenSec"
+        style="
+          width: 100%;
+
+          border: 1px solid;
+          background-color: rgb(188, 201, 171);
+          height: 650px;
+          position: absolute;
+          top: 2280px;
+          right: 0;
+          left: 0;
+        "
+      ></div>
+
+      <!--body text 2 - intro to nutrwise-->
+      <div
+        style="
+          margin: 0 auto;
+
+          z-index: 50;
+          position: absolute;
+          top: 2600px;
+
+          left: 0px;
+          right: 0px;
+          background-color: rgb(255, 255, 255);
+          width: 850px;
+          display: flex;
+          border: 1px solid;
+          
+          height: 700px;
+          
+        "
+      >
+        <!--text-->
+        <div style="padding-top: 75px; padding-left: 50px; padding-right: 50px; ">
+          <p class="aboutUs" style="color: rgb(162, 174, 146);font-size: 24px;width:300px">HOW NUTRIWISE BOT CAME TO BE</p>
+          <p class="slogan" style="font-size: 34px; margin: 15px">
+            NutriWise Origins: Using AI ChatBot to Aid Users with Nutrition
+          </p>
+          <hr />
+
+          <br />
+          <p style="font-size:19px; font-style: italic; color: rgb(162, 174, 146);">Ever wonder why people lean towards unhealthy options? </p>
+          <br>
+          <p style="padding-bottom: 30px; line-height:25px">
+            
+            People lack nutritional knowledge and motivation, causing them to eat poorly. 
+            Existing apps lack a dynamic nutritional assistant and many other features that would make them more impactful, which our 
+            bot aims to fulfill. Our company values diversity and holistic treatment which is reflected 
+            in NutriWise conversations to improve nutrition.
+          </p>
+
+          <a href="background.html" style="color: rgb(162, 174, 146);">READ MORE &gt;</a>
+        </div>
+        <img
+          style="width: 50%"
+          src="practice pictures nutriwise/snow.jpg"
+          alt=""
+        />
+      </div>
+
+
+
+      
+
+     
+
+
+
+
+
+    </div>
+
+    <!--footer-->
+    <div id="footer"></div>
+
+    <script>
+      
+      /*---------------prototyp combine later-----------*/
+     function flip(cardpicID, cardtextID) {
+        var img = document.getElementById(cardpicID);
+        var text = document.getElementById(cardtextID);
+        if (img.style.display === "none") {
+          img.style.display = "block";
+          text.style.display = "none";
+        } else {
+          img.style.display = "none";
+          text.style.display = 'block'
+           
+        }
+      }
+      
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          // Insert the loaded content into the container section
+          document.getElementById("footer").innerHTML = data;
+        })
+
+        .catch((error) => console.error("Error loading content:", error));
+      
+    </script>
+
+    <!-----------------prototype------------->
+    <script src="prototypeFunctions.js">
+    </script>
+  </body>
+</html>
